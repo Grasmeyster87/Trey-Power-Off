@@ -1,0 +1,4 @@
+D:\Program\program\TreyClock\TreyClock2\TreyClock2\Release\TreyClock2.MyForm.resources
+D:\Program\program\TreyClock\TreyClock2\TreyClock2\Release\TreyClock2.vcxproj.GenerateResource.cache
+D:\Program\program\TreyClock\TreyClock2\TreyClock2\Release\TreyClock2.exe
+D:\Program\program\TreyClock\TreyClock2\TreyClock2\Release\TreyClock2.vcxproj.AssemblyReference.cache

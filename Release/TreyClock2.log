@@ -1,0 +1,4 @@
+﻿  MyForm.cpp
+D:\Program\program\TreyClock\TreyClock2\TreyClock2\MyForm.h(592,20): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+  MyForm.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  TreyClock2.vcxproj -> D:\Program\program\TreyClock\TreyClock2\TreyClock2\Release\TreyClock2.exe
