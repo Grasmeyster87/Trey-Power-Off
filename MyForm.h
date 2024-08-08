@@ -68,6 +68,7 @@ namespace TreyClock2 {
 	private: System::Windows::Forms::ToolStripMenuItem^ MinimizedMenuItem;
 
 	private: System::Windows::Forms::ToolStripMenuItem^ showToolStripMenuItem;
+	private: System::Windows::Forms::Button^ button1;
 
 	protected:
 	private: System::ComponentModel::IContainer^ components;
@@ -106,6 +107,7 @@ namespace TreyClock2 {
 			this->label5 = (gcnew System::Windows::Forms::Label());
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
+			this->button1 = (gcnew System::Windows::Forms::Button());
 			notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			this->contextMenuStrip1->SuspendLayout();
 			this->SuspendLayout();
@@ -250,6 +252,15 @@ namespace TreyClock2 {
 			this->label7->ForeColor = System::Drawing::Color::Maroon;
 			this->label7->Name = L"label7";
 			// 
+			// button1
+			// 
+			resources->ApplyResources(this->button1, L"button1");
+			this->button1->BackColor = System::Drawing::Color::Turquoise;
+			this->button1->ForeColor = System::Drawing::Color::Maroon;
+			this->button1->Name = L"button1";
+			this->button1->UseVisualStyleBackColor = false;
+			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			// 
 			// MyForm
 			// 
 			this->AllowDrop = true;
@@ -258,6 +269,7 @@ namespace TreyClock2 {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
 				static_cast<System::Int32>(static_cast<System::Byte>(255)));
 			this->ContextMenuStrip = this->contextMenuStrip1;
+			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->label6);
 			this->Controls->Add(this->label5);
@@ -371,6 +383,9 @@ namespace TreyClock2 {
 
 	private: System::Void powerOFF() {
 		   system("shutdown -p");
+	}
+	private: System::Void resetPC() {
+		system("shutdown /r /t 0");
 	}
 
     private: System::Void btn_shutdown_Click(System::Object^ sender, System::EventArgs^ e) {	
@@ -591,6 +606,9 @@ private: System::Void notifyIcon1_DoubleClick(System::Object^ sender, System::Ev
 	this->System::Windows::Forms::Form::Visible = true;
 	this->WindowState == System::Windows::Forms::FormWindowState::Normal;
 	
+}
+private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
+	this->resetPC();
 }
 };
 }
