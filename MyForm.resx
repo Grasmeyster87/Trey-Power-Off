@@ -280,10 +280,10 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btn_shutdown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 91</value>
+    <value>12, 100</value>
   </data>
   <data name="btn_shutdown.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 45</value>
+    <value>126, 45</value>
   </data>
   <data name="btn_shutdown.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -313,7 +313,7 @@
     <value>Off</value>
   </data>
   <data name="btn_reset.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 369</value>
+    <value>157, 346</value>
   </data>
   <data name="btn_reset.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 45</value>
@@ -346,7 +346,7 @@
     <value>Off</value>
   </data>
   <data name="btn_alarm.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 369</value>
+    <value>9, 346</value>
   </data>
   <data name="btn_alarm.Size" type="System.Drawing.Size, System.Drawing">
     <value>115, 45</value>
@@ -355,7 +355,7 @@
     <value>4</value>
   </data>
   <data name="btn_alarm.Text" xml:space="preserve">
-    <value>Аlarm</value>
+    <value>Аlarm Set</value>
   </data>
   <data name="&gt;&gt;btn_alarm.Name" xml:space="preserve">
     <value>btn_alarm</value>
@@ -373,7 +373,7 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="boxHour.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 301</value>
+    <value>9, 278</value>
   </data>
   <data name="boxHour.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>150, 80</value>
@@ -403,7 +403,7 @@
     <value>Times New Roman, 15.75pt</value>
   </data>
   <data name="boxMinute.Location" type="System.Drawing.Point, System.Drawing">
-    <value>160, 301</value>
+    <value>157, 278</value>
   </data>
   <data name="boxMinute.MaximumSize" type="System.Drawing.Size, System.Drawing">
     <value>150, 80</value>
@@ -436,7 +436,7 @@
     <value>Microsoft Sans Serif, 15.75pt</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>23, 247</value>
+    <value>24, 228</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
     <value>33, 25</value>
@@ -469,7 +469,7 @@
     <value>Off</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>166, 247</value>
+    <value>148, 228</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
     <value>53, 25</value>
@@ -502,7 +502,7 @@
     <value>Off</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>133, 302</value>
+    <value>130, 279</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
     <value>18, 25</value>
@@ -535,7 +535,7 @@
     <value>Off</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>62, 247</value>
+    <value>63, 228</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
     <value>27, 25</value>
@@ -568,7 +568,7 @@
     <value>Off</value>
   </data>
   <data name="label6.Location" type="System.Drawing.Point, System.Drawing">
-    <value>225, 247</value>
+    <value>207, 228</value>
   </data>
   <data name="label6.Size" type="System.Drawing.Size, System.Drawing">
     <value>47, 25</value>
@@ -601,7 +601,7 @@
     <value>Off</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>63, 207</value>
+    <value>75, 183</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 24</value>
@@ -634,10 +634,10 @@
     <value>Off</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>22, 142</value>
+    <value>157, 100</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>250, 45</value>
+    <value>115, 45</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -655,7 +655,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>0</value>
+    <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
@@ -664,7 +664,7 @@
     <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>284, 461</value>
+    <value>284, 424</value>
   </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
