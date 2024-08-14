@@ -1,6 +1,7 @@
 #pragma once
 #include <iostream>
 #include <clocale>
+#include "Maker.h"
 
 #include <msclr/marshal.h>
 using namespace System;
@@ -385,7 +386,7 @@ namespace TreyClock2 {
 		   system("shutdown -p");
 	}
 	private: System::Void resetPC() {
-		system("shutdown /r /t 0");
+		Maker shutdown2();
 	}
 
     private: System::Void btn_shutdown_Click(System::Object^ sender, System::EventArgs^ e) {	
@@ -484,12 +485,6 @@ namespace TreyClock2 {
 			StreamWriter^ sw = gcnew StreamWriter(timefileName);
 			sw->WriteLine(clocktime);
 
-			/*sw->Write(defaulTime);
-			sw->WriteLine("...or just Write");
-			sw->WriteLine("and do {0} output too.", "formatted");
-			sw->WriteLine("You can also send non-text objects:");
-			sw->WriteLine(DateTime::Now);*/
-
 			sw->Close();
 			/*---------------------------------------------------------------------------------------*/
 		};
@@ -568,34 +563,19 @@ namespace TreyClock2 {
 		}
     } 
 
-
 private: System::Void MyForm_Resize(System::Object^ sender, System::EventArgs^ e) {
 
 	if (this->WindowState == System::Windows::Forms::FormWindowState::Minimized)
-	{
-		
-		//this->ShowInTaskbar = false; //пробовал так
-		this->Hide(); //и так
+	{				
+		this->Hide(); 
 	}
 	if (this->WindowState == System::Windows::Forms::FormWindowState::Normal)
 	{		
 		this->Show();
 		this->Focus();
-		//this->Raise();
-		//this->setFocus();
 		this->Visible = true;
-		this->ShowInTaskbar = true; //пробовал так
-		//this->Hide(); //и так
-	}
-
-	/*if (this->WindowState == FormWindowState::Minimized) {
-		NotifyIcon::BalloonTipTitlele = "ѕрограмма была спр€тана";
-		notifyIcon1->BalloonTipText = "ќбратите внимание что программа была спр€тана в трей и продолжит свою работу.";
-		notifyIcon1->ShowBalloonTip(3000);
-		this->ShowInTaskbar = false; //пробовал так
-		notifyIcon1->Visible = true;*/
-		//this->Hide(); //и так
-	//}
+		this->ShowInTaskbar = true; 
+	}	
 }
 private: System::Void MinimizedMenuItem_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->WindowState = System::Windows::Forms::FormWindowState::Minimized;
