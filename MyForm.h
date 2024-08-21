@@ -1,8 +1,9 @@
 #pragma once
 #include <iostream>
+#include <string>
 #include <clocale>
 #include "Maker.h"
-
+#include <msclr\marshal_cppstd.h>
 #include <msclr/marshal.h>
 using namespace System;
 using namespace msclr::interop;
@@ -473,11 +474,12 @@ namespace TreyClock2 {
 		/*----------------------------- Запись файла -------------------------------------------*/
 
 		String^ defaulTime = "23:44";
-
+		
 		String^ timefileName = "./Files/timefile.txt";
-
-		String^ clocktime = this->boxHour->Text + ":" + this->boxMinute->Text;
-
+		String^ clocktime = defaulTime;
+	
+		clocktime = this->boxHour->Text +":" + this->boxMinute->Text;
+		
 		if (this->label5->Text->Length == 2 && this->label6->Text->Length == 2) {
 			timeHour = System::Convert::ToInt32(this->label5->Text);
 			timeMinute = System::Convert::ToInt32(this->label6->Text);
@@ -503,9 +505,9 @@ namespace TreyClock2 {
 
 	/*-----------------------------------------------------------------------------------------------------*/
 
-				timeHour = System::Convert::ToInt32(this->label5->Text);
+			/*	timeHour = System::Convert::ToInt32(this->label5->Text);
 				timeMinute = System::Convert::ToInt32(this->label6->Text);
-
+				*/
 	/*-------------- Блок проверки и вывода чисел будильника в два знака ----------------------------------*/
 
 				blockTwoSing();
