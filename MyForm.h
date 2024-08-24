@@ -5,9 +5,10 @@
 #include "Maker.h"
 #include <msclr\marshal_cppstd.h>
 #include <msclr/marshal.h>
+#include "MyForm1.h"
 using namespace System;
 using namespace msclr::interop;
-
+using namespace System::Diagnostics;
 namespace TreyClock2 {
 
 	using namespace System;
@@ -71,6 +72,7 @@ namespace TreyClock2 {
 
 	private: System::Windows::Forms::ToolStripMenuItem^ showToolStripMenuItem;
 	private: System::Windows::Forms::Button^ button1;
+	private: System::Windows::Forms::Button^ button2;
 
 	protected:
 	private: System::ComponentModel::IContainer^ components;
@@ -110,6 +112,7 @@ namespace TreyClock2 {
 			this->label6 = (gcnew System::Windows::Forms::Label());
 			this->label7 = (gcnew System::Windows::Forms::Label());
 			this->button1 = (gcnew System::Windows::Forms::Button());
+			this->button2 = (gcnew System::Windows::Forms::Button());
 			notifyIcon1 = (gcnew System::Windows::Forms::NotifyIcon(this->components));
 			this->contextMenuStrip1->SuspendLayout();
 			this->SuspendLayout();
@@ -181,6 +184,9 @@ namespace TreyClock2 {
 			// 
 			resources->ApplyResources(this->btn_shutdown, L"btn_shutdown");
 			this->btn_shutdown->BackColor = System::Drawing::Color::Turquoise;
+			this->btn_shutdown->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->btn_shutdown->FlatAppearance->BorderSize = 16;
+			this->btn_shutdown->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Red;
 			this->btn_shutdown->ForeColor = System::Drawing::Color::Maroon;
 			this->btn_shutdown->Name = L"btn_shutdown";
 			this->btn_shutdown->UseVisualStyleBackColor = false;
@@ -190,6 +196,7 @@ namespace TreyClock2 {
 			// 
 			resources->ApplyResources(this->btn_reset, L"btn_reset");
 			this->btn_reset->BackColor = System::Drawing::Color::Turquoise;
+			this->btn_reset->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->btn_reset->ForeColor = System::Drawing::Color::Maroon;
 			this->btn_reset->Name = L"btn_reset";
 			this->btn_reset->UseVisualStyleBackColor = false;
@@ -199,6 +206,7 @@ namespace TreyClock2 {
 			// 
 			resources->ApplyResources(this->btn_alarm, L"btn_alarm");
 			this->btn_alarm->BackColor = System::Drawing::Color::Turquoise;
+			this->btn_alarm->Cursor = System::Windows::Forms::Cursors::Hand;
 			this->btn_alarm->ForeColor = System::Drawing::Color::Maroon;
 			this->btn_alarm->Name = L"btn_alarm";
 			this->btn_alarm->UseVisualStyleBackColor = false;
@@ -258,10 +266,23 @@ namespace TreyClock2 {
 			// 
 			resources->ApplyResources(this->button1, L"button1");
 			this->button1->BackColor = System::Drawing::Color::Turquoise;
+			this->button1->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button1->FlatAppearance->BorderSize = 16;
+			this->button1->FlatAppearance->MouseOverBackColor = System::Drawing::Color::Red;
 			this->button1->ForeColor = System::Drawing::Color::Maroon;
 			this->button1->Name = L"button1";
 			this->button1->UseVisualStyleBackColor = false;
 			this->button1->Click += gcnew System::EventHandler(this, &MyForm::button1_Click);
+			// 
+			// button2
+			// 
+			resources->ApplyResources(this->button2, L"button2");
+			this->button2->Cursor = System::Windows::Forms::Cursors::Hand;
+			this->button2->ForeColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
+				static_cast<System::Int32>(static_cast<System::Byte>(255)));
+			this->button2->Name = L"button2";
+			this->button2->UseVisualStyleBackColor = true;
+			this->button2->Click += gcnew System::EventHandler(this, &MyForm::button2_Click);
 			// 
 			// MyForm
 			// 
@@ -271,6 +292,7 @@ namespace TreyClock2 {
 			this->BackColor = System::Drawing::Color::FromArgb(static_cast<System::Int32>(static_cast<System::Byte>(128)), static_cast<System::Int32>(static_cast<System::Byte>(128)),
 				static_cast<System::Int32>(static_cast<System::Byte>(255)));
 			this->ContextMenuStrip = this->contextMenuStrip1;
+			this->Controls->Add(this->button2);
 			this->Controls->Add(this->button1);
 			this->Controls->Add(this->label7);
 			this->Controls->Add(this->label6);
@@ -285,7 +307,7 @@ namespace TreyClock2 {
 			this->Controls->Add(this->btn_shutdown);
 			this->Controls->Add(this->label1);
 			this->DoubleBuffered = true;
-			this->ForeColor = System::Drawing::Color::Yellow;
+			this->ForeColor = System::Drawing::SystemColors::MenuHighlight;
 			this->FormBorderStyle = System::Windows::Forms::FormBorderStyle::FixedSingle;
 			this->KeyPreview = true;
 			this->MaximizeBox = false;
@@ -371,10 +393,7 @@ namespace TreyClock2 {
 
 			timeHour = System::Convert::ToInt32(this->label5->Text);
 			timeMinute = System::Convert::ToInt32(this->label6->Text);
-			//MessageBox::Show( str->Remove(2));
-			//MessageBox::Show( str->Substring(3));
-		}
-		//char timedate[5] = "00:00";
+		}		
 		fread->Close();		
 	/*----------------------------- Чтение файла --------------------------------------*/
 	}
@@ -591,6 +610,10 @@ private: System::Void notifyIcon1_DoubleClick(System::Object^ sender, System::Ev
 }
 private: System::Void button1_Click(System::Object^ sender, System::EventArgs^ e) {
 	this->resetPC();
+}
+private: System::Void button2_Click(System::Object^ sender, System::EventArgs^ e) {
+	MyForm1^ f2 = gcnew MyForm1();
+	f2->Show();
 }
 };
 }

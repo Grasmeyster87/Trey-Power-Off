@@ -1,7 +1,9 @@
 ﻿  Maker.cpp
   MyForm.cpp
-D:\Program\program\TreyClock\TreyClock2\TreyClock2\MyForm.h(390,9): warning C4930: Maker shutdown2(void): функция с прототипом не вызвана (предполагалось определение переменной?)
-D:\Program\program\TreyClock\TreyClock2\TreyClock2\MyForm.h(589,20): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+D:\Program\program\TreyClock\TreyClock2\TreyClock2\MyForm.h(409,9): warning C4930: Maker shutdown2(void): функция с прототипом не вызвана (предполагалось определение переменной?)
+D:\Program\program\TreyClock\TreyClock2\TreyClock2\MyForm.h(608,20): warning C4553: "==": результат выражения не используется; вы хотели использовать "="?
+  MyForm1.cpp
+  .NETFramework,Version=v4.7.2.AssemblyAttributes.cpp
   Создание кода...
   Maker.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
   TreyClock2.vcxproj -> D:\Program\program\TreyClock\TreyClock2\TreyClock2\Release\TreyClock2.exe

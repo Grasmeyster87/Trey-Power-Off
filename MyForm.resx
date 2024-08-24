@@ -137,30 +137,6 @@
     <value>On</value>
   </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="MinimizedMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
-  </data>
-  <data name="MinimizedMenuItem.Text" xml:space="preserve">
-    <value>Minimized</value>
-  </data>
-  <data name="powerOffToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
-  </data>
-  <data name="powerOffToolStripMenuItem.Text" xml:space="preserve">
-    <value>PowerOff</value>
-  </data>
-  <data name="showToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
-  </data>
-  <data name="showToolStripMenuItem.Text" xml:space="preserve">
-    <value>Show</value>
-  </data>
-  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
-    <value>130, 22</value>
-  </data>
-  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
-    <value>Close</value>
-  </data>
   <data name="contextMenuStrip1.Size" type="System.Drawing.Size, System.Drawing">
     <value>131, 92</value>
   </data>
@@ -234,11 +210,35 @@
   <data name="notifyIcon1.Visible" type="System.Boolean, mscorlib">
     <value>True</value>
   </data>
+  <data name="MinimizedMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="MinimizedMenuItem.Text" xml:space="preserve">
+    <value>Minimized</value>
+  </data>
+  <data name="powerOffToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="powerOffToolStripMenuItem.Text" xml:space="preserve">
+    <value>PowerOff</value>
+  </data>
+  <data name="showToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="showToolStripMenuItem.Text" xml:space="preserve">
+    <value>Show</value>
+  </data>
+  <data name="closeToolStripMenuItem.Size" type="System.Drawing.Size, System.Drawing">
+    <value>130, 22</value>
+  </data>
+  <data name="closeToolStripMenuItem.Text" xml:space="preserve">
+    <value>Close</value>
+  </data>
   <data name="label1.Font" type="System.Drawing.Font, System.Drawing">
     <value>Microsoft Sans Serif, 36pt</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 23</value>
+    <value>19, 58</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
     <value>242, 50</value>
@@ -262,7 +262,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
-    <value>13</value>
+    <value>14</value>
   </data>
   <metadata name="timer1.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>285, 17</value>
@@ -280,7 +280,7 @@
     <value>Microsoft Sans Serif, 12pt</value>
   </data>
   <data name="btn_shutdown.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 100</value>
+    <value>9, 125</value>
   </data>
   <data name="btn_shutdown.Size" type="System.Drawing.Size, System.Drawing">
     <value>126, 45</value>
@@ -301,7 +301,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_shutdown.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>13</value>
   </data>
   <data name="btn_reset.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -334,7 +334,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_reset.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>12</value>
   </data>
   <data name="btn_alarm.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -367,7 +367,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;btn_alarm.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>11</value>
   </data>
   <data name="boxHour.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 15.75pt</value>
@@ -397,7 +397,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;boxHour.ZOrder" xml:space="preserve">
-    <value>9</value>
+    <value>10</value>
   </data>
   <data name="boxMinute.Font" type="System.Drawing.Font, System.Drawing">
     <value>Times New Roman, 15.75pt</value>
@@ -427,7 +427,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;boxMinute.ZOrder" xml:space="preserve">
-    <value>8</value>
+    <value>9</value>
   </data>
   <data name="label2.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -457,7 +457,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>7</value>
+    <value>8</value>
   </data>
   <data name="label3.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -490,7 +490,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label3.ZOrder" xml:space="preserve">
-    <value>6</value>
+    <value>7</value>
   </data>
   <data name="label4.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -523,7 +523,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label4.ZOrder" xml:space="preserve">
-    <value>5</value>
+    <value>6</value>
   </data>
   <data name="label5.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -556,7 +556,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label5.ZOrder" xml:space="preserve">
-    <value>4</value>
+    <value>5</value>
   </data>
   <data name="label6.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -589,7 +589,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label6.ZOrder" xml:space="preserve">
-    <value>3</value>
+    <value>4</value>
   </data>
   <data name="label7.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -601,7 +601,7 @@
     <value>Off</value>
   </data>
   <data name="label7.Location" type="System.Drawing.Point, System.Drawing">
-    <value>75, 183</value>
+    <value>73, 189</value>
   </data>
   <data name="label7.Size" type="System.Drawing.Size, System.Drawing">
     <value>144, 24</value>
@@ -622,7 +622,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label7.ZOrder" xml:space="preserve">
-    <value>2</value>
+    <value>3</value>
   </data>
   <data name="button1.AutoSizeMode" type="System.Windows.Forms.AutoSizeMode, System.Windows.Forms">
     <value>GrowAndShrink</value>
@@ -634,10 +634,10 @@
     <value>Off</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>157, 100</value>
+    <value>147, 125</value>
   </data>
   <data name="button1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>115, 45</value>
+    <value>125, 45</value>
   </data>
   <data name="button1.TabIndex" type="System.Int32, mscorlib">
     <value>15</value>
@@ -655,6 +655,67 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
+    <value>2</value>
+  </data>
+  <data name="button2.AutoSize" type="System.Boolean, mscorlib">
+    <value>True</value>
+  </data>
+  <data name="button2.FlatStyle" type="System.Windows.Forms.FlatStyle, System.Windows.Forms">
+    <value>Flat</value>
+  </data>
+  <data name="button2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        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
+</value>
+  </data>
+  <data name="button2.ImeMode" type="System.Windows.Forms.ImeMode, System.Windows.Forms">
+    <value>Off</value>
+  </data>
+  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>222, 2</value>
+  </data>
+  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>62, 53</value>
+  </data>
+  <data name="button2.TabIndex" type="System.Int32, mscorlib">
+    <value>16</value>
+  </data>
+  <data name="&gt;&gt;button2.Name" xml:space="preserve">
+    <value>button2</value>
+  </data>
+  <data name="&gt;&gt;button2.Type" xml:space="preserve">
+    <value>System.Windows.Forms.Button, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </data>
+  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
+    <value>$this</value>
+  </data>
+  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
     <value>1</value>
   </data>
   <metadata name="$this.Localizable" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
